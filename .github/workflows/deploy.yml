@@ -9,6 +9,9 @@ env:
 jobs:
   test:
     environment: testing
+    env:
+      MONGODB_CLUSTER_ADDRESS: cluster0.hxypgic.mongodb.net
+      PORT: 8080
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
